@@ -106,3 +106,31 @@ func main() {
 	}
 
 }
+
+/*
+Funções são blocos de código que executam uma ação.
+Elas são declaradas usando a palavra-chave "func" seguida do nome da função, uma lista de argumentos entre parênteses (se houver), e um tipo de retorno (se houver).
+Veja um exemplo de uma função simples em Go que recebe 2 argumentos e retorna uma valor do tipo inteiro:
+*/
+func soma(a int, b int) int {
+	return a + b
+}
+
+// Veja um exemplo de uma função que não retorna nenhum tipo de valor:
+func imprimir(mensagem string) {
+	fmt.Println(mensagem)
+}
+
+// Exemplo de uma função que possui um retorno nomeado.
+func subtrair(a int, b int) (resultado int) {
+	resultado = a - b
+	return
+}
+
+// É possível ter várias declarações de retorno em uma única função.
+func divide(a float64, b float64) (float64, string) {
+	if b == 0 {
+		return 0, "Não é possível dividir por zero"
+	}
+	return a / b, ""
+}
